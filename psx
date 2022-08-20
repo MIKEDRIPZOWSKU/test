@@ -1,0 +1,206 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local PetSimXWebM = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local Title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local pattern = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local bg = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local bg_2 = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local inject = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local UIPadding = Instance.new("UIPadding")
+local uistroke = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local version = Instance.new("TextLabel")
+local e = Instance.new("ImageLabel")
+local UICorner_6 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UIPadding_2 = Instance.new("UIPadding")
+
+--Properties:
+
+PetSimXWebM.Name = "PetSimX.WebM"
+PetSimXWebM.Parent = game.Workspace
+PetSimXWebM.Enabled = true
+PetSimXWebM.ResetOnSpawn = false
+
+Frame.Parent = PetSimXWebM
+Frame.Active = true
+Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.402918786, 0, 0.5, 0)
+Frame.Size = UDim2.new(0.030837547, 300, 0.536834955, 0)
+Frame.ZIndex = 3
+
+UIAspectRatioConstraint.Parent = Frame
+UIAspectRatioConstraint.AspectRatio = 1.700
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.AnchorPoint = Vector2.new(0.5, 0)
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.497904867, 0, 0.0157511532, 0)
+Title.Size = UDim2.new(0.850000083, 0, 0.132327661, 0)
+Title.ZIndex = 4
+Title.Font = Enum.Font.FredokaOne
+Title.Text = "Note: Your Bank Must Be Tier 3 or Up."
+Title.TextColor3 = Color3.fromRGB(59, 177, 252)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner.CornerRadius = UDim.new(0.100000001, 0)
+UICorner.Parent = Frame
+
+pattern.Name = "pattern"
+pattern.Parent = Frame
+pattern.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+pattern.BackgroundTransparency = 1.000
+pattern.BorderSizePixel = 0
+pattern.Size = UDim2.new(1, 0, 1, 0)
+pattern.ZIndex = 3
+pattern.Image = "rbxassetid://6511368117"
+pattern.ImageColor3 = Color3.fromRGB(59, 180, 255)
+pattern.ImageTransparency = 0.950
+pattern.ScaleType = Enum.ScaleType.Tile
+pattern.TileSize = UDim2.new(0, 100, 0, 100)
+
+UICorner_2.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_2.Parent = pattern
+
+bg.Name = "bg"
+bg.Parent = Frame
+bg.AnchorPoint = Vector2.new(0.5, 0.5)
+bg.BackgroundColor3 = Color3.fromRGB(28, 69, 82)
+bg.BorderSizePixel = 0
+bg.Position = UDim2.new(0.5, 0, 0.522459805, 0)
+bg.Rotation = -4.500
+bg.Size = UDim2.new(1, 0, 1.00508034, 0)
+bg.ZIndex = -4
+
+UICorner_3.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_3.Parent = bg
+
+bg_2.Name = "bg"
+bg_2.Parent = Frame
+bg_2.AnchorPoint = Vector2.new(0.5, 0.5)
+bg_2.BackgroundColor3 = Color3.fromRGB(59, 177, 252)
+bg_2.BorderSizePixel = 0
+bg_2.Position = UDim2.new(0.484144419, 0, 0.522459805, 0)
+bg_2.Rotation = -2.000
+bg_2.Size = UDim2.new(1.00171137, 0, 1.00508034, 0)
+bg_2.ZIndex = -3
+
+UICorner_4.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_4.Parent = bg_2
+
+inject.Name = "inject"
+inject.Parent = Frame
+inject.AnchorPoint = Vector2.new(0.5, 0.5)
+inject.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+inject.BackgroundTransparency = 1.000
+inject.BorderSizePixel = 0
+inject.Position = UDim2.new(0.481078058, 0, 0.824999988, 0)
+inject.Size = UDim2.new(0.400000006, 0, 0.25, 0)
+inject.ZIndex = 6
+inject.AutoButtonColor = false
+inject.Image = "rbxassetid://6869680115"
+inject.ScaleType = Enum.ScaleType.Slice
+inject.SliceCenter = Rect.new(55, 55, 95, 95)
+inject.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/vnLrb1vy"))()
+end)
+
+TextLabel.Parent = inject
+TextLabel.AnchorPoint = Vector2.new(0.5, 0)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0, 0)
+TextLabel.Size = UDim2.new(0.899999976, 0, 1, 0)
+TextLabel.ZIndex = 7
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "💉Inject💉"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeColor3 = Color3.fromRGB(17, 58, 72)
+TextLabel.TextWrapped = true
+
+UIPadding.Parent = inject
+UIPadding.PaddingBottom = UDim.new(0.100000001, 0)
+UIPadding.PaddingLeft = UDim.new(0.0250000004, 0)
+UIPadding.PaddingRight = UDim.new(0.0250000004, 0)
+UIPadding.PaddingTop = UDim.new(0.100000001, 0)
+
+uistroke.Name = "ui-stroke"
+uistroke.Parent = Frame
+uistroke.AnchorPoint = Vector2.new(0.5, 0.5)
+uistroke.BackgroundColor3 = Color3.fromRGB(28, 69, 82)
+uistroke.BorderSizePixel = 0
+uistroke.Position = UDim2.new(0.5, 0, 0.5, 0)
+uistroke.Size = UDim2.new(1.01989734, 0, 1.03382552, 0)
+uistroke.ZIndex = 0
+
+UICorner_5.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_5.Parent = uistroke
+
+version.Name = "version"
+version.Parent = Frame
+version.AnchorPoint = Vector2.new(0.5, 0)
+version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+version.BackgroundTransparency = 1.000
+version.BorderSizePixel = 0
+version.Position = UDim2.new(0.878442943, 0, 0.86788106, 0)
+version.Size = UDim2.new(0.324122846, 0, 0.127415001, 0)
+version.ZIndex = 4
+version.Font = Enum.Font.FredokaOne
+version.Text = "V1.2"
+version.TextColor3 = Color3.fromRGB(59, 177, 252)
+version.TextScaled = true
+version.TextSize = 14.000
+version.TextWrapped = true
+
+e.Name = "e"
+e.Parent = Frame
+e.AnchorPoint = Vector2.new(0.5, 0.5)
+e.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+e.BorderColor3 = Color3.fromRGB(255, 255, 255)
+e.Position = UDim2.new(0.480363727, 0, 0.424039334, 0)
+e.Size = UDim2.new(0.400000006, 0, 0.478357524, 0)
+e.ZIndex = 6
+e.Image = "rbxassetid://10579519896"
+
+UICorner_6.Parent = e
+
+ImageLabel.Parent = Frame
+ImageLabel.Active = true
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.13794893, 0, -2.62103009, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxassetid://10579519896"
+
+UIPadding_2.Parent = PetSimXWebM
+UIPadding_2.PaddingTop = UDim.new(0, -18)
+
+-- Scripts:
+
+local function RRPZ_fake_script() -- inject.LocalScript 
+	local script = Instance.new('LocalScript', inject)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(RRPZ_fake_script)() 
