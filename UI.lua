@@ -1373,7 +1373,7 @@ local function getObjGen()
             Gui.Logo.Size = UDim2.new(1, 0, 0.100000001, 0)
             Gui.Logo.ZIndex = 122
             Gui.Logo.Image = "rbxassetid://84738746050463"
-            Gui.Logo.ImageColor3 = Color3.fromRGB(0, 0, 0) --Gui.Logo.ImageColor3 = Color3.fromRGB(134, 142, 255)
+            Gui.Logo.ImageColor3 = Color3.fromRGB(134, 142, 255)
             Gui.Logo.ScaleType = Enum.ScaleType.Fit
 
             Gui.UIGradient_5.Color =
